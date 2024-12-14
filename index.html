@@ -6,31 +6,51 @@
     <title>Digital Clock</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .heading{
+            font-family: FreeSans;
+            -webkit-text-stroke: 2px white;
+            font-weight: 900;
+            /* text-shadow: 2px 2px 20px red; */
+        }
+
+        .clock{
+            color: yellow;
+            font-family: fantasy;
+        }
+
+        .am-pm{
+            -webkit-text-stroke: 1px red;
+        }
+    </style>
 </head>
 <body>
-    <div class="w-screen h-screen flex justify-center bg-slate-600 items-center" id="wrapper">
-        <div class="container flex flex-col items-center gap-10">
-            <h1 class="heading text-9xl font-extrabold">DIGITAL CLOCK</h1>
-            <div class="clock text-white text-8xl items-baseline flex font-semibold">
+    <div class="relative w-screen h-screen bg-black flex justify-center overflow-hidden items-center" id="wrapper">
+        <div class="container md: overflow-hidden flex flex-col items-center gap-10">
+            <h1 class="heading lg:text-9xl text-3xl">DIGITAL CLOCK</h1>
+            <div class="clock lg:text-9xl text-3xl items-baseline flex font-semibold ">
                 <div class="time text-center">
                     <p class="digit" id="hour">00</p>
-                    <span class="text-3xl">hours</span>
+                    <!-- <span class="text-3xl">hours</span> -->
                 </div>
                 <div class="separator">:</div>
 
                 <div class="time text-center">
                     <p class="digit" id="minute">00</p>
-                    <span class="text-3xl">minutes</span>
+                    <!-- <span class="text-3xl">minutes</span> -->
                 </div>
                 <div class="separator">:</div>
 
                 <div class="time text-center">
                     <p class="digit" id="second">00</p>
-                    <span class="text-3xl">seconds</span>
+                    <!-- <span class="text-3xl">seconds</span> -->
                 </div>
 
-                <div class="am-pm ml-8 text-7xl font-normal">AM</div>
+                <div class="am-pm lg:ml-8 ml-1 lg:text-8xl text-2xl font-normal  text-transparent ">AM</div>
             </div>
+        </div>
+        <div class="footer absolute bottom-0 bg-white w-screen text-center p-1">
+            <p>Made With &hearts; By @rohit.web</p>
         </div>
     </div>
 
