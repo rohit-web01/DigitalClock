@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-screen h-screen flex justify-center bg-slate-600 items-center" id="wrapper">
+        <div class="container flex flex-col items-center gap-10">
+            <h1 class="heading text-9xl font-extrabold">DIGITAL CLOCK</h1>
+            <div class="clock text-white text-8xl items-baseline flex font-semibold">
+                <div class="time text-center">
+                    <p class="digit" id="hour">00</p>
+                    <span class="text-3xl">hours</span>
+                </div>
+                <div class="separator">:</div>
+
+                <div class="time text-center">
+                    <p class="digit" id="minute">00</p>
+                    <span class="text-3xl">minutes</span>
+                </div>
+                <div class="separator">:</div>
+
+                <div class="time text-center">
+                    <p class="digit" id="second">00</p>
+                    <span class="text-3xl">seconds</span>
+                </div>
+
+                <div class="am-pm ml-8 text-7xl font-normal">AM</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
